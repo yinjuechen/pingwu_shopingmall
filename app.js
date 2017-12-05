@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 //connect to database
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_URL, {useMongoClient: true});
-
+// mongodb://juechenyin:Yjc091313@ds131826.mlab.com:31826/shopping_mall
 // seedDB();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
