@@ -23,6 +23,7 @@
     "passport-local-mongoose": "^4.4.0",
     "serve-favicon": "~2.4.5",
     "startbootstrap-half-slider": "^4.0.0-beta",
-    "startbootstrap-shop-homepage": "^4.0.0-beta"
+    "startbootstrap-shop-homepage": "^4.0.0-beta",
+    "startbootstrap-shop-item": "^4.0.0-beta"
   }
 }

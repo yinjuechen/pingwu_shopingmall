@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 
 //connect to database
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/shopping_mall", {useMongoClient: true});
+mongoose.connect(products.env.DATABASE_URL, {useMongoClient: true});
 
 // seedDB();
 // view engine setup

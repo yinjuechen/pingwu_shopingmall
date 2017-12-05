@@ -49,7 +49,7 @@ router.post('/', upload.single('local_image'), function (req, res) {
     var description = req.body.description;
     var image;
     var image_public_id;
-    cloudinary.uploader.upload(req.file.path,function (result) {
+    cloudinary.uploader.upload(req.file.path, function (result) {
         image_public_id = result.public_id;
         image = imagePrestring + result.version + "/" + result.public_id + "." + result.format;
         console.log(result.public_id);
@@ -66,7 +66,7 @@ router.post('/', upload.single('local_image'), function (req, res) {
             if (err) {
                 req.flash("error", err.message);
                 res.redirect('back');
-            }else {
+            } else {
                 console.log('add a new product');
                 console.log(product);
                 res.redirect('/products');
@@ -80,13 +80,24 @@ router.get('/new', function (req, res) {
     res.render('products/new');
 });
 
+//Show a product route
+router.get('/:id', function (req, res) {
+    Product.findById(req.params.id).populate('comment').exec(function (err, foundProduct) {
+        if(err){
+            req.flash("error", err.message);
+            res.redirect('back');
+        }else {
+            res.render('products/show', {product: foundProduct});
+        }
+    });
+});
 //Update a product routes
 router.get('/:id/edit', function (req, res) {
     Product.findById(req.params.id, function (err, foundProduct) {
-        if(err){
+        if (err) {
             req.flash("error", err.message);
             res.redirect('/products');
-        }else {
+        } else {
             res.render('products/edit', {product: foundProduct});
         }
     });
