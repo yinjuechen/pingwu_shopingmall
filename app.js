@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 
 //connect to database
 mongoose.Promise = global.Promise;
-mongoose.connect(products.env.DATABASE_URL, {useMongoClient: true});
+mongoose.connect(process.env.DATABASE_URL, {useMongoClient: true});
 
 // seedDB();
 // view engine setup
