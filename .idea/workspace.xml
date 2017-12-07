@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b909fa03-2ce9-4f16-824d-0c22cb6bc9a7" name="Default" comment="">
+    <list default="true" id="b909fa03-2ce9-4f16-824d-0c22cb6bc9a7" name="Default" comment="add login and sign up feature.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,8 +47,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="6743" column="28" lean-forward="true" selection-start-line="6743" selection-start-column="28" selection-end-line="6743" selection-end-column="28" />
+            <state relative-caret-position="351">
+              <caret line="6748" column="1" lean-forward="true" selection-start-line="6748" selection-start-column="1" selection-end-line="6748" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -361,7 +361,7 @@
       <workItem from="1512400181569" duration="30707000" />
       <workItem from="1512493658509" duration="15951000" />
       <workItem from="1512574550777" duration="11438000" />
-      <workItem from="1512663229773" duration="7939000" />
+      <workItem from="1512663229773" duration="8072000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1512495000629</created>
@@ -475,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512681752014</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add login and sign up feature.">
+      <created>1512681827371</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1512681827371</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68859000" />
+    <option name="totallyTimeSpent" value="68992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -493,7 +500,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -971,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="6743" column="28" lean-forward="true" selection-start-line="6743" selection-start-column="28" selection-end-line="6743" selection-end-column="28" />
+        <state relative-caret-position="351">
+          <caret line="6748" column="1" lean-forward="true" selection-start-line="6748" selection-start-column="1" selection-end-line="6748" selection-end-column="1" />
           <folding />
         </state>
       </provider>
