@@ -6,6 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
 var session = require('express-session');
+var passport = require('passport');
+var LocalStrategy = require('passport-local');
+var User = require('./module/user');
+var methodOverride = require('method-override');
 var index = require('./routes/index');
 var products = require('./routes/products');
 var app = express();
@@ -17,6 +21,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_URL, {useMongoClient: true});
 // mongodb://juechenyin:Yjc091313@ds131826.mlab.com:31826/shopping_mall
 // seedDB();
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -28,6 +33,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
 //Set flash
 app.use(flash());
@@ -41,9 +47,21 @@ app.use(function (req, res, next) {
     res.locals.success = req.flash("success");
     next();
 });
+
+//PASSPORT CONFIGURATIONS
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+app.use(function (req, res, next) {
+    res.locals.currentUser = req.user;
+    next();
+});
 //Set routers
 app.use('/', index);
 app.use('/products', products);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

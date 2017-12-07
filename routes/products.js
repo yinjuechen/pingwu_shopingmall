@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Product = require("../module/product");
+var middlewareObj = require('../middleware/index');
 var imagePrestring = "https://res.cloudinary.com/juechen/image/upload/c_pad,h_400,w_300/v";
 //Upload image configuration
 var multer = require('multer');
@@ -42,8 +43,8 @@ router.get('/', function (req, res) {
     });
 });
 
-//Post a new product
-router.post('/', upload.single('local_image'), function (req, res) {
+//Post a new product(need admin permission)
+router.post('/', middlewareObj.isAdmin, upload.single('local_image'), function (req, res) {
     var name = req.body.name;
     var price = req.body.price;
     var description = req.body.description;
@@ -75,24 +76,27 @@ router.post('/', upload.single('local_image'), function (req, res) {
     });
 });
 
-//Add a new product
-router.get('/new', function (req, res) {
+//Add a new product (need admin permission)
+router.get('/new', middlewareObj.isAdmin, function (req, res) {
     res.render('products/new');
 });
 
 //Show a product route
 router.get('/:id', function (req, res) {
     Product.findById(req.params.id).populate('comment').exec(function (err, foundProduct) {
-        if(err){
+        if (err) {
             req.flash("error", err.message);
             res.redirect('back');
-        }else {
-            res.render('products/show', {product: foundProduct});
+        } else {
+            if (foundProduct)
+                res.render('products/show', {product: foundProduct});
+            else
+                res.redirect('products');
         }
     });
 });
-//Update a product routes
-router.get('/:id/edit', function (req, res) {
+//Update a product routes (need admin permission)
+router.get('/:id/edit', middlewareObj.isAdmin, function (req, res) {
     Product.findById(req.params.id, function (err, foundProduct) {
         if (err) {
             req.flash("error", err.message);

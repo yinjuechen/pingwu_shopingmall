@@ -15,13 +15,14 @@
 
     <!-- Custom styles for this template -->
     <link href="stylesheets/half-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <!-- Font-awesome css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="/">电子商城</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +44,37 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 </li>
+                <% if(!currentUser){%>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"> 登录 </i></a>
+                    <a class="nav-link" href="/login"><i class="fa fa-sign-in" aria-hidden="true"> 登录 </i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-user-plus" aria-hidden="true"> 注册 </i></a>
+                    <a class="nav-link" href="/register"><i class="fa fa-user-plus" aria-hidden="true"> 注册 </i></a>
                 </li>
+                <% }else{ %>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <%= currentUser.username %></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"> 退出 </i></a>
+                </li>
+                <% }%>
             </ul>
         </div>
     </div>
 </nav>
+
+<% if(error && error.length > 0){ %>
+<div class="container mt-3">
+    <div class="alert alert-danger" role="alert">
+        <%= error %>
+    </div>
+</div>
+<% } %>
+<% if(success && success.length > 0){ %>
+<div class="container mt-3">
+    <div class="alert alert-success" role="alert">
+        <%= success %>
+    </div>
+    <% } %>
+</div>

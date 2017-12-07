@@ -1,5 +1,5 @@
 <% include ../patrials/header.ejs %>
-<link rel="stylesheet" href="stylesheets/shop-homepage.css">
+
 <!-- Page Content -->
 <div class="container">
     <div class="row">
@@ -23,25 +23,29 @@
                             <h4 class="card-title">
                                 <a href="#"><%= product.name %></a>
                             </h4>
-                            <h5><%= product.price%> 元</h5>
-                            <!--<p class="card-text"><%= product.description.substring(0,100)%></p>-->
+                            <h5><%= product.price %> 元</h5>
+                            <!--<p class="card-text"><%= product.description.substring(0, 100) %></p>-->
                         </div>
                         <div class="card-footer pl-2">
                             <!--<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>-->
-                            <a href="/products/<%= product._id%>" class="btn btn-primary d-inline">详情</a>
-                            <a href="/products/<%= product._id%>/edit" class="btn btn-warning d-inline">编辑</a>
+                            <a href="/products/<%= product._id %>" class="btn btn-primary d-inline">详情</a>
+                            <% if (currentUser && currentUser.isAdmin){ %>
+                            <a href="/products/<%= product._id %>/edit" class="btn btn-warning d-inline">编辑</a>
+                            <% } %>
                         </div>
                     </div>
                 </div>
                 <% }) %>
+                <% if (currentUser && currentUser.isAdmin){ %>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <a href="/products/new" class="btn btn-primary">添加 <i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <a href="/products/new" class="btn btn-primary">添加 <i class="fa fa-plus"
+                                                                                  aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
-
+                <% } %>
             </div>
             <!-- /.row -->
 
