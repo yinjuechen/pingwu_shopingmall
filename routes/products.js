@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var Product = require("../module/product");
+var Comment = require('../module/comment');
 var middlewareObj = require('../middleware/index');
-var imagePrestring = "https://res.cloudinary.com/juechen/image/upload/c_pad,h_400,w_300/v";
+var imagePrestring = "https://res.cloudinary.com/juechen/image/upload/c_scale,h_400,w_700/v";
 //Upload image configuration
 var multer = require('multer');
 var storage = multer.diskStorage({
@@ -83,7 +84,7 @@ router.get('/new', middlewareObj.isAdmin, function (req, res) {
 
 //Show a product route
 router.get('/:id', function (req, res) {
-    Product.findById(req.params.id).populate('comment').exec(function (err, foundProduct) {
+    Product.findById(req.params.id).populate('comments').exec(function (err, foundProduct) {
         if (err) {
             req.flash("error", err.message);
             res.redirect('back');
@@ -92,6 +93,32 @@ router.get('/:id', function (req, res) {
                 res.render('products/show', {product: foundProduct});
             else
                 res.redirect('products');
+        }
+    });
+});
+
+//Add a comment to a product
+router.post('/:id', middlewareObj.loginCheck, function (req, res) {
+    Product.findById(req.params.id, function (err, foundProduct) {
+        if(err){
+            req.flash("error", err.message);
+            res.redirect('back');
+        }else {
+            console.log(req.body.comment);
+            var comment = req.body.comment;
+            Comment.create(comment, function (err, newComment) {
+                if(err){
+                    req.flash("error",err.message);
+                    res.redirect('back');
+                }else {
+                    newComment.author.id = req.user._id;
+                    newComment.author.username = req.user.username;
+                    newComment.save();
+                    foundProduct.comments.push(newComment);
+                    foundProduct.save();
+                    res.redirect('/products/' + req.params.id);
+                }
+            });
         }
     });
 });
