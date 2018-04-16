@@ -22,6 +22,7 @@
     "flash": "^1.1.0",
     "gulp": "^3.9.1",
     "method-override": "^2.3.10",
+    "moment": "^2.22.1",
     "mongodb": "^3.0.0-rc0",
     "mongoose": "^4.13.6",
     "morgan": "~1.9.0",
