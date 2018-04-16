@@ -7,11 +7,35 @@ var userSchema = new mongoose.Schema({
         required: true
     },
     password: String,
+    idNumber: {
+        type: String,
+        unique: true,
+        required: true
+    },
     email: {
         type: String,
         unique: true,
         required: true
     },
+    parentIdNumber: {
+        type:String,
+        unique: false,
+        required: false
+    },
+    nextLevel:[this],
+    income: Number,
+    incomeDetails:[
+        {
+            createdAt:{
+                type: Date,
+                default: Date.now
+            },
+            childName: String,
+            childIdNumber: String,
+            level: String,
+            amount: String
+        }
+    ],
     isAdmin: {
         type: Boolean,
         default: false

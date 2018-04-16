@@ -14,21 +14,89 @@ router.get('/register', function (req, res) {
 router.post('/register', function (req, res) {
     var username = req.body.username;
     var email = req.body.email;
+    var idNumber = req.body.idNumber;
+    var parentIdNumber = req.body.parentIdNumber;
+    console.log(idNumber);
     var newUser = new User({
         username: username,
-        email: email
+        email: email,
+        idNumber: idNumber,
+        parentIdNumber: parentIdNumber,
+        income:0
     });
-    console.log(typeof req.body.password);
+    console.log(typeof req.body._id);
     if (req.body.password === req.body.password_confirm) {
-        User.register(newUser, req.body.password, function (err, user) {
-            if (err) {
-                req.flash("error", err.message);
-                return res.redirect('back');
+        User.find({idNumber:parentIdNumber}, function (err, foundUser) {
+            console.log(foundUser);
+            if(err){
+                console.log(err);
+                req.flash("error","推荐人不在系统中");
+                res.redirect('back');
+            }else {
+                User.register(newUser, req.body.password, function (err, user) {
+                    if (err) {
+                        req.flash("error", err.message);
+                        return res.redirect('back');
+                    }
+                    passport.authenticate('local')(req, res, function () {
+                        console.log(user);
+                        req.flash("success", "注册成功");
+                        res.redirect('/products');
+                    })
+                    if(foundUser.length)
+                    {
+                        //推荐人拿20%
+                        // foundUser[0].childrenIdNumber.push(user.idNumber);
+                        foundUser[0].nextLevel.push(user);
+                        foundUser[0].income += 3000*0.2;
+                        var tmpIncome = {
+                            childName: user.username,
+                            childIdNumber: user.idNumber,
+                            level: 1,
+                            amount: 600
+                        };
+                        foundUser[0].incomeDetails.push(tmpIncome);
+                        foundUser[0].save();
+                        //推荐人的上级如果是高级会员或者钻石会员拿15%
+                        User.find({idNumber:foundUser[0].parentIdNumber}, function (err, userB) {
+                            console.log('userB: ', userB);
+                            if(err || !userB.length){
+                                //do nothing
+                            }else {
+                                if(userB[0].nextLevel.length >= 8){
+                                    userB[0].income += 3000*0.15;
+                                    var tmpIncome = {
+                                        childName: user.username,
+                                        childIdNumber: user.idNumber,
+                                        level: 2,
+                                        amount: 450
+                                    }
+                                    userB[0].incomeDetails.push(tmpIncome);
+                                    userB[0].save();
+                                }
+                                //推荐人的上级的上级如果是钻石会员还能拿10%
+                                User.find({idNumber:userB[0].parentIdNumber}, function (err, userA) {
+                                    if(err || !userA.length){
+                                        //do nothing
+                                    }else {
+                                        if(userA[0].nextLevel.length >= 16){
+                                            userA[0].income += 3000 * 0.1;
+                                            var tmpIncome = {
+                                                childName: user.username,
+                                                childIdNumber: user.idNumber,
+                                                level: 3,
+                                                amount: 300
+                                            }
+                                            userA[0].incomeDetails.push(tmpIncome);
+                                            userA[0].save();
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
             }
-            passport.authenticate('local')(req, res, function () {
-                req.flash("success", "注册成功");
-                res.redirect('/products');
-            });
         });
     } else {
         req.flash("error", "请输入相同的密码");
@@ -55,5 +123,17 @@ router.get('/logout', function (req, res) {
     req.logout();
     req.flash("success", "退出成功");
     res.redirect('/');
+});
+
+//User Profiles
+router.get('/users/:id', function (req, res) {
+    User.findById(req.params.id, function (err, foundUser) {
+        if (err){
+            req.flash('err', err.message);
+            res.redirect('back');
+        }else {
+            res.render("users/show",{user: foundUser});
+        }
+    });
 });
 module.exports = router;

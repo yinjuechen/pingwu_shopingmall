@@ -34,10 +34,18 @@
                     <a class="nav-link" href="/products">商品</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">关于</a>
+                    <% if(!currentUser){%>
+                    <a class="nav-link" href="/login">会员中心</a>
+                    <%}else{%>
+                    <a class="nav-link" href="/users/<%= currentUser._id%>">会员中心</a>
+                    <%}%>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">联系</a>
+                    <% if(!currentUser){%>
+                    <a class="nav-link" href="/login">个人收入明细</a>
+                    <%}else{%>
+                    <a class="nav-link" href="/users/<%= currentUser._id%>">个人收入明细</a>
+                    <%}%>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -53,7 +61,7 @@
                 </li>
                 <% }else{ %>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> <%= currentUser.username %></a>
+                    <a class="nav-link" href="/users/<%= currentUser._id%>"> <%= currentUser.username %></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"> 退出 </i></a>
