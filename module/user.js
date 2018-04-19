@@ -36,7 +36,10 @@ var userSchema = new mongoose.Schema({
             amount: String
         }
     ],
-    address: String,
+    address:{
+      type:String,
+      required:true
+    },
     date:{
       type: Date,
       default:Date.now
