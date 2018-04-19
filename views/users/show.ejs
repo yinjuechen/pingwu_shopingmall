@@ -60,7 +60,7 @@
                                         注册日期：<%= level.date.toLocaleString()%>
                                         <%if(level.nextLevel.length){%>
                                         <button class="btn btn-link collapsed btn-info" data-toggle="collapse" data-target="#collapse<%= level.phoneNumber%>" aria-expanded="false" aria-controls="collapse<%= level.phoneNumber%>">
-                                            展开下级
+                                            下属团队
                                         </button>
                                         <%}%>
                                     </h6>
@@ -86,7 +86,7 @@
                                                     注册日期：<%= childLevel.date.toLocaleString()%>
                                                     <%if(childLevel.nextLevel.length){%>
                                                     <button class="btn btn-link collapsed btn-info" data-toggle="collapse" data-target="#collapse<%= childLevel.phoneNumber%>" aria-expanded="false" aria-controls="collapse<%= childLevel.phoneNumber%>">
-                                                        展开下级
+                                                        下属团队
                                                     </button>
                                                     <%}%>
                                                 </h6>
