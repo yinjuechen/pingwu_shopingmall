@@ -7,17 +7,17 @@ var userSchema = new mongoose.Schema({
         required: true
     },
     password: String,
-    idNumber: {
+    phoneNumber: {
         type: String,
         unique: true,
         required: true
     },
-    email: {
-        type: String,
-        unique: true,
-        required: true
-    },
-    parentIdNumber: {
+    // email: {
+    //     type: String,
+    //     unique: true,
+    //     required: false
+    // },
+    parentPhoneNumber: {
         type:String,
         unique: false,
         required: false
@@ -36,6 +36,11 @@ var userSchema = new mongoose.Schema({
             amount: String
         }
     ],
+    address: String,
+    date:{
+      type: Date,
+      default:Date.now
+    },
     isAdmin: {
         type: Boolean,
         default: false

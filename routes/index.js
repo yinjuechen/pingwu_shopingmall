@@ -13,20 +13,19 @@ router.get('/register', function (req, res) {
 });
 router.post('/register', function (req, res) {
     var username = req.body.username;
-    var email = req.body.email;
-    var idNumber = req.body.idNumber;
-    var parentIdNumber = req.body.parentIdNumber;
-    console.log(idNumber);
+    var address = req.body.address;
+    var phoneNumber = req.body.phoneNumber;
+    var parentPhoneNumber = req.body.parentPhoneNumber;
     var newUser = new User({
         username: username,
-        email: email,
-        idNumber: idNumber,
-        parentIdNumber: parentIdNumber,
+        address: address,
+        phoneNumber: phoneNumber,
+        parentPhoneNumber: parentPhoneNumber,
         income:0
     });
     console.log(typeof req.body._id);
     if (req.body.password === req.body.password_confirm) {
-        User.find({idNumber:parentIdNumber}, function (err, foundUser) {
+        User.find({phoneNumber:parentPhoneNumber}, function (err, foundUser) {
             console.log(foundUser);
             if(err){
                 console.log(err);
@@ -51,14 +50,14 @@ router.post('/register', function (req, res) {
                         foundUser[0].income += 3000*0.2;
                         var tmpIncome = {
                             childName: user.username,
-                            childIdNumber: user.idNumber,
+                            childIdNumber: user.phoneNumber,
                             level: 1,
                             amount: 600
                         };
                         foundUser[0].incomeDetails.push(tmpIncome);
                         foundUser[0].save();
                         //推荐人的上级如果是高级会员或者钻石会员拿15%
-                        User.find({idNumber:foundUser[0].parentIdNumber}, function (err, userB) {
+                        User.find({phoneNumber:foundUser[0].parentPhoneNumber}, function (err, userB) {
                             console.log('userB: ', userB);
                             if(err || !userB.length){
                                 //do nothing
@@ -67,15 +66,30 @@ router.post('/register', function (req, res) {
                                     userB[0].income += 3000*0.15;
                                     var tmpIncome = {
                                         childName: user.username,
-                                        childIdNumber: user.idNumber,
+                                        childIdNumber: user.phoneNumber,
                                         level: 2,
                                         amount: 450
                                     }
                                     userB[0].incomeDetails.push(tmpIncome);
                                     userB[0].save();
                                 }
+                                //update 更新上一级的nextlevel
+                                var tmpLevelB = userB[0].nextLevel.findIndex(function (element) {
+                                    console.log('UserB nextlevel: ' + userB[0].nextLevel);
+                                    console.log('elementB phoneNumber: ' + element.phoneNumber);
+                                    console.log('foundUserB phonenumber: ' + foundUser[0].phoneNumber);
+                                    return element.phoneNumber == foundUser[0].phoneNumber;
+                                });
+                                console.log('tmpLevelB: ' + tmpLevelB);
+                                console.log('userB tmpLevel: ' + userB[0].nextLevel[tmpLevelB].username);
+                                // userB[0].nextLevel.push(foundUser[0]);
+                                if(tmpLevelB > -1){
+                                    userB[0].nextLevel.splice(tmpLevelB,1);
+                                    userB[0].nextLevel.push(foundUser[0]);
+                                }
+                                userB[0].save();
                                 //推荐人的上级的上级如果是钻石会员还能拿10%
-                                User.find({idNumber:userB[0].parentIdNumber}, function (err, userA) {
+                                User.find({phoneNumber:userB[0].parentPhoneNumber}, function (err, userA) {
                                     if(err || !userA.length){
                                         //do nothing
                                     }else {
@@ -83,13 +97,26 @@ router.post('/register', function (req, res) {
                                             userA[0].income += 3000 * 0.1;
                                             var tmpIncome = {
                                                 childName: user.username,
-                                                childIdNumber: user.idNumber,
+                                                childIdNumber: user.phoneNumber,
                                                 level: 3,
                                                 amount: 300
                                             }
                                             userA[0].incomeDetails.push(tmpIncome);
-                                            userA[0].save();
                                         }
+                                        var tmpLevelA = userA[0].nextLevel.findIndex(function (element) {
+                                            console.log('UserA nextlevel: ' + userA[0].nextLevel);
+                                            console.log('elementA phoneNumber: ' + element.phoneNumber);
+                                            console.log('foundUserA phonenumber: ' + foundUser[0].phoneNumber);
+                                            return element.phoneNumber == userB[0].phoneNumber;
+                                        });
+                                        console.log('tmpLevelA: ' + tmpLevelA);
+                                        console.log('userAtmpLevel: ' + userA[0].nextLevel[tmpLevelA].username);
+                                        // userB[0].nextLevel.push(foundUser[0]);
+                                        if(tmpLevelA > -1){
+                                            userA[0].nextLevel.splice(tmpLevelA,1);
+                                            userA[0].nextLevel.push(userB[0]);
+                                        }
+                                        userA[0].save();
                                     }
                                 });
                             }
