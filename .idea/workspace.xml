@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b909fa03-2ce9-4f16-824d-0c22cb6bc9a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/views/users/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/show.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/user.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state relative-caret-position="398">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding>
                 <element signature="e#153#227#0" />
                 <element signature="e#848#901#0" />
@@ -90,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/users/show.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="110" column="69" lean-forward="true" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
+            <state relative-caret-position="85">
+              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
               <folding>
                 <element signature="e#830#2135#0#HTML" />
                 <element signature="e#3316#5108#0#HTML" />
@@ -182,12 +183,12 @@
         <option value="$PROJECT_DIR$/views/patrials/footer.ejs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/patrials/header.ejs" />
-        <option value="$PROJECT_DIR$/module/user.js" />
         <option value="$PROJECT_DIR$/views/register/register.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/products/products.ejs" />
         <option value="$PROJECT_DIR$/views/products/show.ejs" />
         <option value="$PROJECT_DIR$/views/users/show.ejs" />
+        <option value="$PROJECT_DIR$/module/user.js" />
       </list>
     </option>
   </component>
@@ -431,7 +432,7 @@
       <workItem from="1523852482207" duration="180000" />
       <workItem from="1523852690998" duration="1854000" />
       <workItem from="1524100287943" duration="5828000" />
-      <workItem from="1524153196388" duration="21032000" />
+      <workItem from="1524153196388" duration="21611000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1512495000629</created>
@@ -601,11 +602,32 @@
       <option name="project" value="LOCAL" />
       <updated>1524175770022</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="beta 0.0.5">
+      <created>1524176490484</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1524176490484</updated>
+    </task>
+    <task id="LOCAL-00026" summary="下属团队">
+      <created>1524176561394</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1524176561394</updated>
+    </task>
+    <task id="LOCAL-00027" summary="下属团队0.1">
+      <created>1524176789567</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1524176789567</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191321000" />
+    <option name="totallyTimeSpent" value="191900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,7 +720,9 @@
     <MESSAGE value="beta 0.0.3" />
     <MESSAGE value="beta 0.0.4" />
     <MESSAGE value="beta 0.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta 0.0.5" />
+    <MESSAGE value="下属团队" />
+    <MESSAGE value="下属团队0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="下属团队0.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,13 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/register/register.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
@@ -1032,24 +1049,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/user.js">
+    <entry file="file://$PROJECT_DIR$/views/users/show.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding>
-            <element signature="e#153#227#0" />
-            <element signature="e#848#901#0" />
+            <element signature="e#830#2135#0#HTML" />
+            <element signature="e#3316#5108#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/show.ejs">
+    <entry file="file://$PROJECT_DIR$/views/register/register.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="110" column="69" lean-forward="true" selection-start-line="110" selection-start-column="69" selection-end-line="110" selection-end-column="69" />
+        <state relative-caret-position="211">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
-            <element signature="e#830#2135#0#HTML" />
-            <element signature="e#3316#5108#0#HTML" />
+            <element signature="e#153#227#0" />
+            <element signature="e#848#901#0" />
           </folding>
         </state>
       </provider>
