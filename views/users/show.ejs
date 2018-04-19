@@ -1,0 +1,110 @@
+<% include ../patrials/header.ejs %>
+    <div class="row mt-1">
+        <div class="col-2 text-center">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">个人信息</a>
+                <a class="list-group-item list-group-item-action" id="list-children-list" data-toggle="list" href="#list-children" role="tab" aria-controls="children">下级</a>
+                <a class="list-group-item list-group-item-action" id="list-income-list" data-toggle="list" href="#list-income" role="tab" aria-controls="income">收入明细</a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <table class="table">
+                      <tbody>
+                      <tr>
+                          <th>姓名</th>
+                          <td><%= user.username %></td>
+                      </tr>
+                      <tr>
+                          <th>身份证号</th>
+                          <td><%= user.idNumber %></td>
+                      </tr>
+                      <tr>
+                          <th>会员等级</th>
+                          <% if(user.nextLevel.length < 8) {%>
+                            <td>普通会员</td>
+                          <% }else if(user.nextLevel.length < 16){%>
+                            <td>高级会员</td>
+                          <%}else {%>
+                            <td>钻石会员</td>
+                          <%}%>
+                      </tr>
+                      <tr>
+                          <th>邮箱</th>
+                          <td><%= user.email %></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="list-children" role="tabpanel" aria-labelledby="list-children-list">
+                    <table class="table">
+                        <thead>
+                        <tr class="text-center">
+                            <th scope="col">姓名</th>
+                            <th scope="col">身份证号</th>
+                            <th scope="col">会员等级</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <% user.nextLevel.forEach(function (level) { %>
+                            <tr>
+                                <td><%= level.username %></td>
+                                <td><%= level.idNumber %></td>
+                                <td>
+                                <% if(level.nextLevel.length < 8) {%>
+                                    普通会员
+                                <% }else if(level.nextLevel.length < 16){%>
+                                    高级会员
+                                <%}else {%>
+                                    钻石会员
+                                <%}%>
+                                <%});%>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="list-income" role="tabpanel" aria-labelledby="list-income-list">
+                    <h4>总收入：
+                        <%if(user.income == 0){%>
+                        0元
+                        <%}else {%>
+                        <%= user.income%>元
+                        <%}%>
+                    </h4>
+                    <table class="table">
+                        <thead>
+                        <tr class="text-center">
+                            <th scope="col">姓名</th>
+                            <th scope="col">身份证号</th>
+                            <th scope="col">推荐等级</th>
+                            <th scope="col">日期</th>
+                            <th scope="col">金额(元)</th>
+                        </tr>
+                        </thead>
+                        <tbody class="text-center">
+                        <% user.incomeDetails.forEach(function (incomeDetail) { %>
+                        <tr>
+                            <td><%= incomeDetail.childName%></td>
+                            <td><%= incomeDetail.childIdNumber%></td>
+                            <td>
+                                <% if(incomeDetail.level == 1){ %>
+                                  一级推荐
+                                <%}else if(incomeDetail.level == 2){%>
+                                    二级推荐
+                                <%}else{%>
+                                    三级推荐
+                                <%}%>
+                            </td>
+                            <td><%= incomeDetail.createdAt.toLocaleString()%></td>
+                            <td><%= incomeDetail.amount%></td>
+                            <%})%>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<% include ../patrials/footer.ejs %>
