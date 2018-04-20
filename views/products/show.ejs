@@ -13,14 +13,14 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block img-fluid m-auto" src="http://placehold.it/900x350" alt="First slide">
+                        <img class="d-block img-fluid m-auto" src="<%= product.image%>" alt="First slide">
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid m-auto" src="http://placehold.it/900x350" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid m-auto" src="http://placehold.it/900x350" alt="Third slide">
-                    </div>
+                    <!--<div class="carousel-item">-->
+                        <!--<img class="d-block img-fluid m-auto" src="http://placehold.it/900x350" alt="Second slide">-->
+                    <!--</div>-->
+                    <!--<div class="carousel-item">-->
+                        <!--<img class="d-block img-fluid m-auto" src="http://placehold.it/900x350" alt="Third slide">-->
+                    <!--</div>-->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -57,7 +57,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <img src="http://res.cloudinary.com/juechen/image/upload/c_scale,w_3150/v1524175464/description_mefnls.jpg" alt="Responsive image" class="img-fluid">
+                    <img src="<%=product.introduction%>" alt="Responsive image" class="img-fluid">
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <p>商品参数</p>
