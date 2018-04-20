@@ -5,6 +5,7 @@ var productSchema = new mongoose.Schema({
     image: String,
     image_public_id: String,
     description: String,
+    introduction:String,
     comments:[
         {
             type: mongoose.Schema.Types.ObjectId,
