@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../module/user');
+var middlewareObj = require('../middleware/index');
 var passport = require('passport');
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -153,7 +154,7 @@ router.get('/logout', function (req, res) {
 });
 
 //User Profiles
-router.get('/users/:id', function (req, res) {
+router.get('/users/:id',middlewareObj.loginCheck, function (req, res) {
     User.findById(req.params.id, function (err, foundUser) {
         if (err){
             req.flash('err', err.message);

@@ -12,6 +12,7 @@ var User = require('./module/user');
 var methodOverride = require('method-override');
 var index = require('./routes/index');
 var products = require('./routes/products');
+var admin = require('./routes/admin');
 var app = express();
 var seedDB = require('./seed');
 var mongoose = require('mongoose');
@@ -60,7 +61,7 @@ app.use(function (req, res, next) {
 //Set routers
 app.use('/', index);
 app.use('/products', products);
-
+app.use('/admin', admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
