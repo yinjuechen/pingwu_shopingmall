@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../module/user');
+var middlewareObj = require('../middleware/index');
 var passport = require('passport');
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -16,13 +17,6 @@ router.post('/register', function (req, res) {
     var address = req.body.address;
     var phoneNumber = req.body.phoneNumber;
     var parentPhoneNumber = req.body.parentPhoneNumber;
-    var newUser = new User({
-        username: username,
-        address: address,
-        phoneNumber: phoneNumber,
-        parentPhoneNumber: parentPhoneNumber,
-        income:0
-    });
     console.log(typeof req.body._id);
     if (req.body.password === req.body.password_confirm) {
         User.find({phoneNumber:parentPhoneNumber}, function (err, foundUser) {
@@ -32,6 +26,13 @@ router.post('/register', function (req, res) {
                 req.flash("error","推荐人不在系统中");
                 res.redirect('back');
             }else {
+                var newUser = new User({
+                    username: username,
+                    address: address,
+                    phoneNumber: phoneNumber,
+                    parentPhoneNumber: parentPhoneNumber,
+                    income:0,
+                });
                 User.register(newUser, req.body.password, function (err, user) {
                     if (err) {
                         req.flash("error", err.message);
@@ -80,8 +81,8 @@ router.post('/register', function (req, res) {
                                     console.log('foundUserB phonenumber: ' + foundUser[0].phoneNumber);
                                     return element.phoneNumber == foundUser[0].phoneNumber;
                                 });
-                                console.log('tmpLevelB: ' + tmpLevelB);
-                                console.log('userB tmpLevel: ' + userB[0].nextLevel[tmpLevelB].username);
+                                // console.log('tmpLevelB: ' + tmpLevelB);
+                                // console.log('userB tmpLevel: ' + userB[0].nextLevel[tmpLevelB].username);
                                 // userB[0].nextLevel.push(foundUser[0]);
                                 if(tmpLevelB > -1){
                                     userB[0].nextLevel.splice(tmpLevelB,1);
@@ -109,8 +110,8 @@ router.post('/register', function (req, res) {
                                             console.log('foundUserA phonenumber: ' + foundUser[0].phoneNumber);
                                             return element.phoneNumber == userB[0].phoneNumber;
                                         });
-                                        console.log('tmpLevelA: ' + tmpLevelA);
-                                        console.log('userAtmpLevel: ' + userA[0].nextLevel[tmpLevelA].username);
+                                        // console.log('tmpLevelA: ' + tmpLevelA);
+                                        // console.log('userAtmpLevel: ' + userA[0].nextLevel[tmpLevelA].username);
                                         // userB[0].nextLevel.push(foundUser[0]);
                                         if(tmpLevelA > -1){
                                             userA[0].nextLevel.splice(tmpLevelA,1);
@@ -153,7 +154,7 @@ router.get('/logout', function (req, res) {
 });
 
 //User Profiles
-router.get('/users/:id', function (req, res) {
+router.get('/users/:id',middlewareObj.loginCheck, function (req, res) {
     User.findById(req.params.id, function (err, foundUser) {
         if (err){
             req.flash('err', err.message);

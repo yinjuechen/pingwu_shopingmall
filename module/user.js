@@ -47,6 +47,10 @@ var userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
+    },
+    status:{
+        type:Boolean,
+        default:false
     }
 });
 userSchema.plugin(passportLocalMongoose);
