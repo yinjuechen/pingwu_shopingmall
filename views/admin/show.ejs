@@ -27,12 +27,18 @@
                         <td><%= user.phoneNumber%></td>
                         <td><%= user.date.toLocaleString()%></td>
                         <%if(user.status){ %>
-                        <td>已审核</td>
+                        <td class="text-success">已审核</td>
                         <%}else{%>
-                        <td>待审核</td>
+                        <td class="text-danger">待审核</td>
                         <%}%>
-                        <td>
+                        <td class="d-inline-block">
                             <a href="/admin/<%= currentUser._id%>/user/<%=user._id%>" class="btn btn-sm btn-success">查看</a>
+                        </td>
+                        <td>
+                            <a href="/users/<%=user._id%>" class="btn btn-sm btn-warning">编辑</a>
+                        </td>
+                        <td>
+                            <form action="/users/<%= user._id%>/password?_method=PUT" method="POST"><button class="btn btn-sm btn-danger">重置密码</button></form>
                         </td>
                     </tr>
                     <%}%>

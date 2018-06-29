@@ -59,6 +59,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/register"><i class="fa fa-user-plus" aria-hidden="true"> 注册 </i></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin"><i class="fa fa-sign-in" aria-hidden="true"> 管理员 </i></a>
+                </li>
                 <% }else{ %>
                 <li class="nav-item">
                     <a class="nav-link" href="/users/<%= currentUser._id%>"> <%= currentUser.username %></a>
@@ -66,6 +69,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"> 退出 </i></a>
                 </li>
+                <%if(currentUser.isAdmin){ %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/<%=currentUser._id%>"><i class="fa fa-sign-out" aria-hidden="true"> 管理员 </i></a>
+                </li>
+                <% }%>
                 <% }%>
             </ul>
         </div>

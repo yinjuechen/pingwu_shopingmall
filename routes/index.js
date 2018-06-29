@@ -52,6 +52,7 @@ router.post('/register', function (req, res) {
                         var tmpIncome = {
                             childName: user.username,
                             childIdNumber: user.phoneNumber,
+                            childId:user._id,
                             level: 1,
                             amount: 600
                         };
@@ -68,6 +69,7 @@ router.post('/register', function (req, res) {
                                     var tmpIncome = {
                                         childName: user.username,
                                         childIdNumber: user.phoneNumber,
+                                        childId:user._id,
                                         level: 2,
                                         amount: 450
                                     }
@@ -99,6 +101,7 @@ router.post('/register', function (req, res) {
                                             var tmpIncome = {
                                                 childName: user.username,
                                                 childIdNumber: user.phoneNumber,
+                                                childId:user._id,
                                                 level: 3,
                                                 amount: 300
                                             }
@@ -164,4 +167,100 @@ router.get('/users/:id',middlewareObj.loginCheck, function (req, res) {
         }
     });
 });
+//Edit User Profiles
+router.get('/users/:id/edit',middlewareObj.checkUserPermission, function (req, res) {
+    User.findById(req.params.id, function (err, foundUser) {
+        if(err){
+            console.log(err);
+            res.redirect('back');
+        }else {
+            res.render('users/edit', {user: foundUser});
+        }
+    });
+});
+
+//Update User Profiles
+router.put('/users/:id',middlewareObj.checkUserPermission, function (req, res) {
+    User.findById(req.params.id, function (err, foundUser) {
+        if(err){
+            console.log(err);
+            res.redirect('back');
+        }else {
+            if(req.user.isAdmin){
+                foundUser.userLevel = req.body.userLevel
+                if(req.body.withdrawalDetail > 0){
+                    if(!foundUser.withdrawal){
+                        foundUser.withdrawal = 0;
+                    }
+                    if(foundUser.income - foundUser.withdrawal - req.body.withdrawalDetail >= 0){
+                        console.log('balance: ' + (foundUser.income - foundUser.withdrawal - req.body.withdrawalDetail));
+                        var tmpWithdrawal = parseInt(foundUser.withdrawal )+ parseInt(req.body.withdrawalDetail);
+                        var tmpWithdrawalDetail = {
+                            amount: req.body.withdrawalDetail
+                        };
+                        foundUser.withdrawal = tmpWithdrawal;
+                        foundUser.withdrawalDetails.push(tmpWithdrawalDetail);
+                    }else {
+                        req.flash("error", "余额不足");
+                    }
+                }
+            }
+            foundUser.idNumber = req.body.idNumber;
+            foundUser.save();
+            res.redirect('/users/' + req.params.id);
+        }
+    });
+});
+
+
+//Edit User's Password
+router.get('/users/:id/password',middlewareObj.checkUserPermission,function (req, res) {
+    User.findById(req.params.id, function (err, foundUser) {
+        if(err){
+            console.log(err);
+            res.redirect('back');
+        }else {
+            res.render('users/password', {user: foundUser});
+        }
+    });
+});
+
+//Update User's Password
+router.put('/users/:id/password',middlewareObj.checkUserPermission, function (req, res) {
+    User.findById(req.params.id, function (err, foundUser) {
+        if(err){
+            console.log(err);
+            res.redirect('back');
+        }else {
+            if(req.user.isAdmin){
+                foundUser.setPassword('666666', function () {
+                    foundUser.save();
+                    res.redirect('/admin/' + req.user._id);
+                });
+            }else {
+                var oldPassword = req.body.oldPassword;
+                var oldPasswordConfirm = req.body.oldPasswordConfirm;
+                var newPassword = req.body.newPassword;
+                if(oldPassword === oldPasswordConfirm){
+                    foundUser.changePassword(oldPassword, newPassword, function (err) {
+                        if(err){
+                            console.log('changePassword', err.message);
+                            req.flash('error', 旧密码输入错误);
+                            res.redirect('/users/' + req.user._id + '/password');
+                        }else {
+                            req.flash('success', "修改密码成功");
+                            res.redirect('/login');
+                        }
+                    });
+                }else{
+                    console.log("两次密码不一样");
+                    req.flash('error', "两次旧密码不一致");
+                    res.redirect('/users/' + req.user._id + '/password');
+                }
+            }
+        }
+    });
+});
+
+
 module.exports = router;
