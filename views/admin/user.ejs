@@ -13,12 +13,12 @@
                 <label for="phoneNumber">手机号码：</label>
                 <input type="text" readonly class="form-control-plaintext" name="phoneNumber" value="<%=user.phoneNumber%>">
                 <label for="level">会员等级：</label>
-                <% if(user.nextLevel.length < 8){%>
-                <input type="text" readonly class="form-control-plaintext" name="level" value="健康使者">
-                <%}else if(user.nextLevel.length < 16){ %>
+                <% if(user.nextLevel.length >= 16 || user.userLevel == 3){%>
+                <input type="text" readonly class="form-control-plaintext" name="level" value="高级合伙人">
+                <%}else if(user.nextLevel.length >= 8 || user.userLevel == 2){ %>
                 <input type="text" readonly class="form-control-plaintext" name="level" value="初级合伙人">
                 <%}else{%>
-                <input type="text" readonly class="form-control-plaintext" name="level" value="高级合伙人">
+                <input type="text" readonly class="form-control-plaintext" name="level" value="健康使者">
                 <%}%>
             </div>
             <div class="d-inline-block">
@@ -32,6 +32,7 @@
                 <%}%>
             </div>
         </div>
+        <% if(parent){ %>
         <div class="form-group">
             <div class="row">
                 <h4 class="col-12 text-left">推荐人信息:</h4>
@@ -44,12 +45,12 @@
                 <label for="parent_phoneNumber">手机号码：</label>
                 <input type="text" readonly class="form-control-plaintext" name="parent_phoneNumber" value="<%=parent.phoneNumber%>">
                 <label for="parent_level">会员等级：</label>
-                <% if(parent.nextLevel.length < 8){%>
-                <input type="text" readonly class="form-control-plaintext" name="parent_level" value="健康使者">
-                <%}else if(user.nextLevel.length < 16){ %>
+                <% if(parent.nextLevel.length >= 16 || parent.userLevel == 3 ){%>
+                <input type="text" readonly class="form-control-plaintext" name="parent_level" value="高级合伙人">
+                <%}else if(user.nextLevel.length >= 8 || parent.userLevel == 2){ %>
                 <input type="text" readonly class="form-control-plaintext" name=parent_"level" value="初级合伙人">
                 <%}else{%>
-                <input type="text" readonly class="form-control-plaintext" name="parent_level" value="高级合伙人">
+                <input type="text" readonly class="form-control-plaintext" name="parent_level" value="健康使者">
                 <%}%>
             </div>
             <div class="d-inline-block">
@@ -63,6 +64,7 @@
                 <%}%>
             </div>
         </div>
+        <%}%>
         <%if(user.status == false){%>
         <div class="form-group">
             <input type="submit" name="agree" value="通过" class="btn btn-sm btn-success" />

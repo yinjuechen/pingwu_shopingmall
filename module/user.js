@@ -32,10 +32,32 @@ var userSchema = new mongoose.Schema({
             },
             childName: String,
             childIdNumber: String,
+            childId:String,
+            status:{
+                type: Boolean,
+                default: false
+            },
             level: String,
-            amount: String
+            amount: Number
         }
     ],
+    withdrawal:{
+      type: Number,
+      default: 0
+    },
+    withdrawalDetails:[
+        {
+            createdAt:{
+                type: Date,
+                default: Date.now
+            },
+            amount: Number
+        }
+    ],
+    idNumber:{
+      type: String,
+      unique: true
+    },
     address:{
       type:String,
       required:true
@@ -43,6 +65,10 @@ var userSchema = new mongoose.Schema({
     date:{
       type: Date,
       default:Date.now
+    },
+    userLevel:{
+      type:Number,
+      default:1
     },
     isAdmin: {
         type: Boolean,

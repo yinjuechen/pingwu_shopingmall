@@ -16,11 +16,12 @@ var admin = require('./routes/admin');
 var app = express();
 var seedDB = require('./seed');
 var mongoose = require('mongoose');
+var localAuthFactory = require('express-local-auth');
+
 
 //connect to database
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_URL, {useMongoClient: true});
-// mongodb://juechenyin:Yjc091313@ds131826.mlab.com:31826/shopping_mall
 // seedDB();
 
 // view engine setup
