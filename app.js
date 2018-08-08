@@ -9,6 +9,7 @@ var session = require('express-session');
 var passport = require('passport');
 var LocalStrategy = require('passport-local');
 var User = require('./module/user');
+var Transaction = require('./module/transaction');
 var methodOverride = require('method-override');
 var index = require('./routes/index');
 var products = require('./routes/products');
@@ -63,6 +64,65 @@ app.use(function (req, res, next) {
 app.use('/', index);
 app.use('/products', products);
 app.use('/admin', admin);
+
+// User.find({}, function (err, users) {
+//     users.forEach(function (user) {
+//         user.income = 0;
+//         user.save();
+//     });
+// });
+//
+// Transaction.remove({}, function (err,removed) {});
+// User.find({}, function (err, users) {
+//     users.forEach(function (user) {
+//         user.incomeDetails.forEach(function (incomeDetail) {
+//             var createdAt = incomeDetail.createdAt;
+//             var amount = incomeDetail.amount;
+//             var childName = incomeDetail.childName;
+//             var phoneNumber = incomeDetail.childIdNumber;
+//             User.find({username:childName}, function (err, foundUser) {
+//                 var child_id = foundUser[0]._id;
+//                 var transaction =  {
+//                     createdAt: createdAt,
+//                     amount: amount,
+//                     child:{
+//                         id:child_id,
+//                         username:childName,
+//                         phoneNumber:phoneNumber
+//                     },
+//                     parent:{
+//                         id:user._id,
+//                         username:user.username
+//                     }
+//                 };
+//                 Transaction.create(transaction, function (err, newTransaction) {
+//                     if(err){
+//                         console.log(err);
+//                     }else{
+//
+//                     }
+//                 });
+//             });
+//         user.transaction = [];
+//         user.save();
+//         });
+//     });
+// });
+
+// Transaction.find({}, function (err, transactions) {
+//     if(err){
+//         console.log(err);
+//     }else {
+//         transactions.forEach(function (transaction) {
+//             User.findById(transaction.parent.id, function (err, foundUser) {
+//                 foundUser.transaction.push(transaction);
+//                 foundUser.save();
+//                 setTimeout(function(err){},500);
+//             });
+//         });
+//     }
+// });
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
