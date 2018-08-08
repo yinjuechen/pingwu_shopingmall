@@ -1,0 +1,114 @@
+<% include ../patrials/header.ejs %>
+<div class="container">
+        <div class="d-inline">
+            <h5 class="d-inline">已审核收入：
+                <%if(user.income == 0){%>
+                0元;
+                <%}else {%>
+                <%= user.income%>元;
+                <%}%>
+            </h5>
+            <h5 class="d-inline">
+                待审核收入：
+                <% if(user.waitingIncome == 0){ %>
+                    0元;
+                <%}else { %>
+                    <%= user.waitingIncome%>元;
+                <%}%>
+            </h5>
+            <h5 class="d-inline">
+                待审核返现：
+                <%if(!user.waitingWithdrawal){%>
+                0元;
+                <%}else {%>
+                <%= user.waitingWithdrawal%>元;
+                <%}%>
+            </h5>
+            <h5 class="d-inline">
+                已审核总返现：
+                <%if(!user.withdrawal){%>
+                <%= 0%>元;
+                <%}else {%>
+                <%= user.withdrawal%>元;
+                <%}%>
+            </h5>
+                <div style="width: 20%">
+                    <form action="/users/<%= user._id%>/transactions?_method=PUT" method="POST">
+                        <div class="form-group">
+                            <label for="withdrawalDetail">申请返现(元)：</label>
+                            <input type="number" class="form-control", name="withdrawalDetail", min="0", step="1">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-primary btn-block">提交申请</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        <%if(user.transaction.length){%>
+        <table class="table">
+            <thead>
+            <tr class="text-center">
+                <th scope="col">姓名</th>
+                <th scope="col">电话号码</th>
+                <th scope="col">推荐等级</th>
+                <th scope="col">日期</th>
+                <th scope="col">收入金额(元)</th>
+                <th scope="col">状态</th>
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            <% user.transaction.forEach(function (action) { %>
+            <tr>
+                <td><%= action.child.username%></td>
+                <td><%= action.child.phoneNumber%></td>
+                <td>
+                    <%if(action.action == 2 || action.action ==3){ %>
+                        返现申请
+                    <%}else{%>
+                    <% if(action.amount == 600){ %>
+                    一级推荐
+                    <%}else if(action.amount == 450){%>
+                    二级推荐
+                    <%}else if(action.amount == 300){%>
+                    三级推荐
+                    <%}%>
+                    <%}%>
+                </td>
+                <td><%= action.createdAt.toLocaleString()%></td>
+                <td><%= action.amount%></td>
+                <td>
+                    <% if(action.action == 0){ %>
+                    待审核收入
+                    <%} else if (action.action == 1){%>
+                    收入审核通过
+                    <%} else if(action.action == 2) { %>
+                    待审核返现申请
+                    <% } else { %>
+                    已审核返现神功
+                    <%}%>
+                </td>
+                <%})%>
+            </tr>
+            </tbody>
+        </table>
+        <%}%>
+        <%if(user.withdrawalDetails.length){%>
+        <table class="table">
+            <thead>
+            <tr class="text-center">
+                <th scope="col">日期</th>
+                <th scope="col">返现金额(元)</th>
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            <% user.withdrawalDetails.forEach(function (withdrawalDetail) {%>
+            <tr>
+                <td><%= withdrawalDetail.createdAt.toLocaleString()%></td>
+                <td><%= withdrawalDetail.amount%></td>
+            </tr>
+            <%})%>
+            </tbody>
+        </table>
+        <%}%>
+</div>
+<% include ../patrials/footer.ejs %>
