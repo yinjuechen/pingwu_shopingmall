@@ -380,7 +380,7 @@ router.put('/users/:id/transactions', middlewareObj.checkUserPermission, functio
             promise.then(function (foundTransaction) {
                 User.findById(foundTransaction.parent.id, function (err, foundUser) {
                     if (err) {
-                        console.log(err);
+                        console.log(err);//
                     } else {
                         if (actionType == 0) {
                             foundUser.waitingIncome = parseInt(foundUser.waitingIncome) - parseInt(foundTransaction.amount);
