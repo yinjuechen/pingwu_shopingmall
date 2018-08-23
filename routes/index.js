@@ -78,8 +78,8 @@ router.post('/register', function (req, res) {
                         });
                         //推荐人的上级如果是高级会员或者钻石会员拿15%
                         var promise = User.find({phoneNumber: foundUser[0].parentPhoneNumber}).exec();
-                        promise.then(function (err, userB) {
-                            if (err || !userB.length) {
+                        promise.then(function (userB) {
+                            if (!userB || !userB.length) {
                                 //do nothing
                             } else {
                                 //update 更新上一级的nextlevel
@@ -129,8 +129,8 @@ router.post('/register', function (req, res) {
                         });
                         promise.then(function (userB) {
                             //推荐人的上级的上级如果是钻石会员还能拿10%
-                            User.find({phoneNumber: userB[0].parentPhoneNumber}, function (err, userA) {
-                                if (err || !userA.length) {
+                            User.find({phoneNumber: userB[0].parentPhoneNumber}, function (userA) {
+                                if ( !userA || !userA.length) {
                                     //do nothing
                                 } else {
                                     var tmpLevelA = userA[0].nextLevel.findIndex(function (element) {
