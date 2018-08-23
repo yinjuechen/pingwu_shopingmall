@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b909fa03-2ce9-4f16-824d-0c22cb6bc9a7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/module/transaction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/users/transactions.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+    <list default="true" id="b909fa03-2ce9-4f16-824d-0c22cb6bc9a7" name="Default" comment="1.bug fix2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seed.js" beforeDir="false" afterPath="$PROJECT_DIR$/seed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/show.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/patrials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/patrials/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/show.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,20 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="397" column="41" selection-start-line="397" selection-start-column="41" selection-end-line="397" selection-end-column="41" />
-              <folding>
-                <element signature="e#10554#10790#0" />
-                <element signature="e#10896#12221#0" />
-                <element signature="e#13875#13934#0" />
-                <element signature="e#16733#16806#0" />
-                <element signature="e#17588#17640#0" />
-                <element signature="e#14004#14244#0" />
-                <element signature="e#14361#15763#0" />
-              </folding>
+            <state relative-caret-position="452">
+              <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -48,11 +26,10 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="17">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="e#2056#2096#0" />
-                <element signature="e#2188#2190#0" />
               </folding>
             </state>
           </provider>
@@ -62,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/module/transaction.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -70,8 +47,8 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="527">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
               <folding>
                 <element signature="e#348#359#0" />
                 <element signature="e#470#545#0" />
@@ -81,14 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transactions.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transactions.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/users/transactions.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="e#1036#1054#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -96,11 +70,8 @@
       <file leaf-file-name="show.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/show.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="110" column="41" lean-forward="true" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="1870">
+              <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -131,8 +102,6 @@
       <find>success</find>
       <find>User</find>
       <find>current</find>
-      <find>nextlevel</find>
-      <find>promise</find>
       <find>console</find>
       <find>user</find>
       <find>curr</find>
@@ -146,6 +115,8 @@
       <find>parse</find>
       <find>parent</find>
       <find>promi</find>
+      <find>nextlevel</find>
+      <find>promise</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,9 +173,9 @@
         <option value="$PROJECT_DIR$/routes/admin.js" />
         <option value="$PROJECT_DIR$/module/user.js" />
         <option value="$PROJECT_DIR$/views/admin/show.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/users/transactions.ejs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
   </component>
@@ -236,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,7 +270,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -319,7 +290,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="461" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="461" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="461" />
-    <property name="SearchEverywhereHistoryKey" value="debug con&#9;ACTION&#9;DebugClass&#10;debug&#9;ACTION&#9;ActivateDebugToolWindow&#10;npm&#9;ACTION&#9;ActivatenpmToolWindow&#10;bootstrap&#9;null&#9;null&#10;git&#9;ACTION&#9;Git.ContextMenu&#10;githu&#9;ACTION&#9;Github.Open.In.Browser&#10;idNu&#9;null&#9;null&#10;idNumber&#9;null&#9;null&#10;github&#9;ACTION&#9;Github.Rebase" />
+    <property name="SearchEverywhereHistoryKey" value="github&#9;ACTION&#9;Github.Open.In.Browser&#10;debug con&#9;ACTION&#9;DebugClass&#10;debug&#9;ACTION&#9;ActivateDebugToolWindow&#10;npm&#9;ACTION&#9;ActivatenpmToolWindow&#10;bootstrap&#9;null&#9;null&#10;git&#9;ACTION&#9;Git.ContextMenu&#10;githu&#9;ACTION&#9;Github.Open.In.Browser&#10;idNu&#9;null&#9;null&#10;idNumber&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.1" />
@@ -501,7 +472,8 @@
       <workItem from="1533093180191" duration="2130000" />
       <workItem from="1533154339888" duration="7408000" />
       <workItem from="1533577545993" duration="18489000" />
-      <workItem from="1533690625567" duration="14771000" />
+      <workItem from="1533690625567" duration="16043000" />
+      <workItem from="1535039052981" duration="3229000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1512495000629</created>
@@ -727,11 +699,39 @@
       <option name="project" value="LOCAL" />
       <updated>1530274680702</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="1.用户交易管理">
+      <created>1533706943709</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1533706943709</updated>
+    </task>
+    <task id="LOCAL-00034" summary="1.用户交易管理">
+      <created>1535039257849</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1535039257849</updated>
+    </task>
+    <task id="LOCAL-00035" summary="1.bug fix">
+      <created>1535039570351</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1535039570351</updated>
+    </task>
+    <task id="LOCAL-00036" summary="1.bug fix2">
+      <created>1535041228680</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1535041228680</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="387906000" />
+    <option name="totallyTimeSpent" value="392407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,13 +754,13 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50852877" side_tool="true" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49626866" weight="0.32897604" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49626866" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914712" weight="0.32897604" />
       <window_info id="npm" order="5" sideWeight="0.50078005" side_tool="true" weight="0.12526652" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49307036" visible="true" weight="0.3017429" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49307036" weight="0.3017429" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.13486141" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -866,7 +866,10 @@
     <MESSAGE value="admin" />
     <MESSAGE value="admin backend management" />
     <MESSAGE value="1.用户添加身份证信息&#10;2.管理员可以初始化用户密码&#10;3.用户可以自行填写身份证信息&#10;4.用户可以自行更改登陆密码&#10;5.审核状态反映到用户界面&#10;6.管理员可以直接授权用户等级" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.用户添加身份证信息&#10;2.管理员可以初始化用户密码&#10;3.用户可以自行填写身份证信息&#10;4.用户可以自行更改登陆密码&#10;5.审核状态反映到用户界面&#10;6.管理员可以直接授权用户等级" />
+    <MESSAGE value="1.用户交易管理" />
+    <MESSAGE value="1.bug fix" />
+    <MESSAGE value="1.bug fix2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.bug fix2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1012,301 +1015,420 @@
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>367</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="348" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>368</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="351" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>371</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="352" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>373</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>375</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="354" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>377</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="355" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>376</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>381</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="357" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>379</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>380</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>382</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>384</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>387</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="362" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>390</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="363" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>389</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>388</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>386</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="366" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>385</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>391</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="368" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>393</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="369" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>395</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="370" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>396</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="371" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>394</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="372" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>397</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>350</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="375" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>351</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="376" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>352</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>353</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="378" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>354</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>355</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="380" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>359</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>360</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="382" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>361</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="383" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>362</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>366</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>363</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="387" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>365</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="388" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>364</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="389" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>358</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>357</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="391" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>356</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>392</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="393" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>349</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>369</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="395" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>370</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="396" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>372</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="397" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>374</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="398" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>378</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="399" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <url />
           <line>383</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="400" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>153</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="402" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>140</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="404" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>89</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>88</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="409" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>91</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>92</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="411" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>51</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="414" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>48</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="415" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="416" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>50</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>49</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>52</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="419" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="420" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>55</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="421" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>68</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>69</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="423" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>71</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>73</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="425" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>74</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="426" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>75</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="427" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>76</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="428" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>79</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>80</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="430" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>81</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="431" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>85</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="432" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>87</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="433" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
+          <line>86</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="434" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="401" />
+      <option name="time" value="435" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1567,8 +1689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="527">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
           <folding>
             <element signature="e#348#359#0" />
             <element signature="e#470#545#0" />
@@ -1577,57 +1699,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#2056#2096#0" />
-            <element signature="e#2188#2190#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="397" column="41" selection-start-line="397" selection-start-column="41" selection-end-line="397" selection-end-column="41" />
-          <folding>
-            <element signature="e#10554#10790#0" />
-            <element signature="e#10896#12221#0" />
-            <element signature="e#13875#13934#0" />
-            <element signature="e#16733#16806#0" />
-            <element signature="e#17588#17640#0" />
-            <element signature="e#14004#14244#0" />
-            <element signature="e#14361#15763#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/show.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="110" column="41" lean-forward="true" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="1870">
+          <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/transaction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/users/transactions.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
           <folding>
-            <element signature="e#1036#1054#0#HTML" expanded="true" />
+            <element signature="e#2056#2096#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
         </state>
       </provider>
     </entry>
