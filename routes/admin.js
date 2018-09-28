@@ -4,7 +4,6 @@ var User = require('../module/user');
 var passport = require('passport');
 var middlewareObj = require('../middleware/index');
 var Product = require("../module/product");
-var Transaction = require("../module/transaction");
 
 //admin home page and log in
 router.get('/', function (req, res) {
@@ -73,14 +72,7 @@ router.get('/:id', middlewareObj.isAdmin, function (req, res) {
                             req.flash('err', err.message);
                             res.redirect('back');
                         }else {
-                            Transaction.find({},function (err, foundTransactions) {
-                                if(err){
-                                    req.flash('err',err.message);
-                                    res.redirect('back');
-                                }else {
-                                    res.render("admin/show", {users: foundUsers, products: foundProducts, transactions: foundTransactions});
-                                }
-                            });
+                            res.render("admin/show", {users: foundUsers, products: foundProducts});
                         }
                     });
                 });
