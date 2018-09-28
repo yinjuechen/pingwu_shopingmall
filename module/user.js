@@ -7,15 +7,92 @@ var userSchema = new mongoose.Schema({
         required: true
     },
     password: String,
-    email: {
+    phoneNumber: {
         type: String,
         unique: true,
         required: true
     },
+    // email: {
+    //     type: String,
+    //     unique: true,
+    //     required: false
+    // },
+    parentPhoneNumber: {
+        type:String,
+        unique: false,
+        required: false
+    },
+    nextLevel:[this],
+    income: {
+      type:Number,
+      default: 0
+    },
+    waitingIncome:{
+      type: Number,
+      default: 0
+    },
+    incomeDetails:[
+        {
+            createdAt:{
+                type: Date,
+                default: Date.now
+            },
+            childName: String,
+            childIdNumber: String,
+            childId:String,
+            status:{
+                type: Boolean,
+                default: false
+            },
+            level: String,
+            amount: Number
+        }
+    ],
+    withdrawal:{
+      type: Number,
+      default: 0
+    },
+    waitingWithdrawal:{
+        type: Number,
+        default: 0
+    },
+    withdrawalDetails:[
+        {
+            createdAt:{
+                type: Date,
+                default: Date.now
+            },
+            amount: Number
+        }
+    ],
+    idNumber:{
+      type: String,
+      unique: true
+    },
+    address:{
+      type:String,
+      required:true
+    },
+    date:{
+      type: Date,
+      default:Date.now
+    },
+    userLevel:{
+      type:Number,
+      default:1
+    },
     isAdmin: {
         type: Boolean,
         default: false
-    }
+    },
+    status:{
+        type:Boolean,
+        default:false
+    },
+    transaction:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"Transaction"
+    }]
 });
 userSchema.plugin(passportLocalMongoose);
 var User = mongoose.model('User', userSchema);

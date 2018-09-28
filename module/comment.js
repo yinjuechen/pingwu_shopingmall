@@ -5,7 +5,7 @@ var commentSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    author:{
+    people:{
         id:{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'
@@ -14,4 +14,4 @@ var commentSchema = new mongoose.Schema({
     }
 });
 var Comment = mongoose.model('Comment',commentSchema);
-module.exports(Comment);
+module.exports = Comment;
