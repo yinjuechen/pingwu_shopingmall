@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var Product = require("./module/product");
-var Transaction = require("./module/transaction");
 var products = [
     {
         name: "产品1",

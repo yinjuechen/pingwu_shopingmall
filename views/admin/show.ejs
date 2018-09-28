@@ -4,7 +4,6 @@
         <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active" id="list-users-list" data-toggle="list" href="#list-users" role="tab" aria-controls="users">用户管理</a>
             <a class="list-group-item list-group-item-action" id="list-products-list" data-toggle="list" href="#list-products" role="tab" aria-controls="products">商品管理</a>
-            <a class="list-group-item list-group-item-action" id="list-transaction-list" data-toggle="list" href="#list-transaction" role="tab" aria-controls="transaction">交易管理</a>
         </div>
     </div>
     <div class="col-6">
@@ -84,63 +83,6 @@
                     <!-- /.row -->
 
                 </div>
-            </div>
-            <div class="tab-pane fade" id="list-transaction" role="tabpanel" aria-labelledby="list-transaction-list">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">用户名</th>
-                        <th scope="col">用户id</th>
-                        <th scope="col">金额</th>
-                        <th scope="col">上级用户</th>
-                        <th scope="col">交易类型</th>
-                        <th scope="col">交易时间</th>
-                        <th scope="col">状态</th>
-                        <th scope="col"></th>
-                    </tr>
-                    <tbody>
-                    <%if(currentUser.isAdmin){%>
-                    <%transactions.forEach(function (transaction) {%>
-                    <tr class="m-1">
-                            <td><%= transaction.child.username%></td>
-                            <td><%= transaction.child.id%></td>
-                            <td><%= transaction.amount%></td>
-                            <td><%= transaction.parent.username%></td>
-                            <td>
-                                <% if(transaction.action == 0){%>
-                                    待审核收入
-                                <%}else if(transaction.action == 1){%>
-                                    已审核收入
-                                <%}else if(transaction.action == 2){ %>
-                                    返现申请
-                                <%}else { %>
-                                    已返现
-                                <%}%>
-                            </td>
-                            <td><%= transaction.createdAt.toLocaleString()%></td>
-                                <% if(transaction.action == 0){ %>
-                                <td>
-                                    <form action="/users/<%=transaction.child.id%>/transactions?_method=PUT" method="POST"><button class="btn btn-sm btn-success" name="transactionId_0" value="<%= transaction.id%>">通过</button></form>
-                                </td>
-                                <%}else if(transaction.action == 1){%>
-                                <td>
-                                    <form action="/users/<%= transaction.child.id%>/transactions?_method=PUT" method="POST"><button class="btn btn-sm btn-danger" name="transactionId_1" value="<%= transaction.id%>">撤销</button></form>
-                                </td>
-                                <%}else if(transaction.action == 2){%>
-                                <td>
-                                    <form action="/users/<%= transaction.child.id%>/transactions?_method=PUT" method="POST"><button class="btn btn-sm btn-success" name="transactionId_2" value="<%= transaction.id%>">通过</button></form>
-                                </td>
-                                <%}else if(transaction.action == 3){ %>
-                                <td>
-                                    <form action="/users/<%= transaction.child.id%>/transactions?_method=PUT" method="POST"><button class="btn btn-sm btn-danger" name="transactionId_3" value="<%= transaction.id%>">撤销</button></form>
-                                </td>
-                                <%}%>
-                    </tr>
-                    <%})%>
-                    <%}%>
-                    </tbody>
-                    </thead>
-                </table>
             </div>
         </div>
     </div>
