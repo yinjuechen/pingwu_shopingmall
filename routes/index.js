@@ -66,16 +66,18 @@ router.post('/register', function (req, res) {
                                 username: foundUser[0].username
                             }
                         };
-                        Transaction.create(transaction0, function (err, newTransaction) {
-                            if (err) {
-                                console.log(err);
-                            } else {
-
-                                foundUser[0].incomeDetails.push(tmpIncome);
-                                foundUser[0].transaction.push(newTransaction);
-                                foundUser[0].save();
-                            }
-                        });
+                        foundUser[0].incomeDetails.push(tmpIncome);
+                        foundUser[0].save();
+                        // Transaction.create(transaction0, function (err, newTransaction) {
+                        //     if (err) {
+                        //         console.log(err);
+                        //     } else {
+                        //
+                        //         foundUser[0].incomeDetails.push(tmpIncome);
+                        //         foundUser[0].transaction.push(newTransaction);
+                        //         foundUser[0].save();
+                        //     }
+                        // });
                         //推荐人的上级如果是高级会员或者钻石会员拿15%
                         var promise = User.find({phoneNumber: foundUser[0].parentPhoneNumber}).exec();
                         promise.then(function (err, userB) {
@@ -115,15 +117,17 @@ router.post('/register', function (req, res) {
                                         username: userB[0].phoneNumber
                                     }
                                 };
-                                Transaction.create(transaction1, function (err, newTransaction1) {
-                                    if (err) {
-                                        console.log(err);
-                                    } else {
-                                        userB[0].incomeDetails.push(tmpIncome);
-                                        userB[0].transaction.push(newTransaction1);
-                                        userB[0].save();
-                                    }
-                                });
+                                userB[0].incomeDetails.push(tmpIncome);
+                                userB[0].save();
+                                // Transaction.create(transaction1, function (err, newTransaction1) {
+                                //     if (err) {
+                                //         console.log(err);
+                                //     } else {
+                                //         userB[0].incomeDetails.push(tmpIncome);
+                                //         userB[0].transaction.push(newTransaction1);
+                                //         userB[0].save();
+                                //     }
+                                // });
                             }
                             return userB[0].save();
                         });
@@ -161,21 +165,29 @@ router.post('/register', function (req, res) {
                                             level: 3,
                                             amount: 300
                                         }
-                                        Transaction.create(transaction2, function (err, newTransaction2) {
+                                        userA[0].incomeDetails.push(tmpIncome);
+                                        userA[0].save(function (err) {
                                             if (err) {
                                                 console.log(err);
                                             } else {
-                                                userA[0].incomeDetails.push(tmpIncome);
-                                                userA[0].transaction.push(newTransaction2);
-                                                userA[0].save(function (err) {
-                                                    if (err) {
-                                                        console.log(err);
-                                                    } else {
 
-                                                    }
-                                                });
                                             }
                                         });
+                                        // Transaction.create(transaction2, function (err, newTransaction2) {
+                                        //     if (err) {
+                                        //         console.log(err);
+                                        //     } else {
+                                        //         userA[0].incomeDetails.push(tmpIncome);
+                                        //         userA[0].transaction.push(newTransaction2);
+                                        //         userA[0].save(function (err) {
+                                        //             if (err) {
+                                        //                 console.log(err);
+                                        //             } else {
+                                        //
+                                        //             }
+                                        //         });
+                                        //     }
+                                        // });
                                     }
                                     userA[0].save();
                                 }
