@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../module/user');
-var Transaction = require('../module/transaction');
+// var Transaction = require('../module/transaction');
 var middlewareObj = require('../middleware/index');
 var passport = require('passport');
 /* GET home page. */
