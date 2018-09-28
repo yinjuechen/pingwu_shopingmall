@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b909fa03-2ce9-4f16-824d-0c22cb6bc9a7" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
       <change afterPath="$PROJECT_DIR$/views/users/edit.ejs" afterDir="false" />
@@ -160,6 +161,22 @@
       <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
       <change beforePath="$PROJECT_DIR$/views/patrials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/patrials/header.ejs" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/module/transaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/users/transactions.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/module/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seed.js" beforeDir="false" afterPath="$PROJECT_DIR$/seed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/show.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/patrials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/patrials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/show.ejs" afterDir="false" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -174,6 +191,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="775">
               <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
@@ -194,6 +212,19 @@
                 <element signature="e#8784#8792#0" />
               </folding>
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+            <state relative-caret-position="379">
+              <caret line="397" column="41" selection-start-line="397" selection-start-column="41" selection-end-line="397" selection-end-column="41" />
+              <folding>
+                <element signature="e#10554#10790#0" />
+                <element signature="e#10896#12221#0" />
+                <element signature="e#13875#13934#0" />
+                <element signature="e#16733#16806#0" />
+                <element signature="e#17588#17640#0" />
+                <element signature="e#14004#14244#0" />
+                <element signature="e#14361#15763#0" />
+              </folding>
+>>>>>>> parent of 66cafc9... 1.用户交易管理
             </state>
           </provider>
         </entry>
@@ -202,10 +233,15 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="17">
+=======
+            <state relative-caret-position="105">
+>>>>>>> parent of 66cafc9... 1.用户交易管理
               <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="e#2056#2096#0" />
+                <element signature="e#2188#2190#0" />
               </folding>
 =======
             <state relative-caret-position="187">
@@ -220,11 +256,15 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
             <state relative-caret-position="119">
+<<<<<<< HEAD
               <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
 =======
             <state relative-caret-position="238">
               <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="54" selection-end-column="7" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
             </state>
           </provider>
         </entry>
@@ -233,12 +273,17 @@
         <entry file="file://$PROJECT_DIR$/views/admin/show.ejs">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="527">
               <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
 =======
             <state relative-caret-position="296">
               <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+            <state relative-caret-position="427">
+              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
               <folding>
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
               </folding>
@@ -246,6 +291,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="transactions.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/users/transactions.ejs">
@@ -268,6 +314,16 @@
             <state relative-caret-position="510">
               <caret line="30" column="89" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="89" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+      <file leaf-file-name="transactions.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/users/transactions.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding>
+                <element signature="e#1036#1054#0#HTML" expanded="true" />
+              </folding>
+>>>>>>> parent of 66cafc9... 1.用户交易管理
             </state>
           </provider>
         </entry>
@@ -275,6 +331,7 @@
       <file leaf-file-name="show.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/users/show.ejs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="1870">
               <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
@@ -286,6 +343,13 @@
                 <element signature="e#2794#8902#0#HTML" />
               </folding>
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+            <state relative-caret-position="92">
+              <caret line="110" column="41" lean-forward="true" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
+              </folding>
+>>>>>>> parent of 66cafc9... 1.用户交易管理
             </state>
           </provider>
         </entry>
@@ -720,11 +784,15 @@
       <workItem from="1533093180191" duration="2130000" />
       <workItem from="1533154339888" duration="7408000" />
       <workItem from="1533577545993" duration="18489000" />
+<<<<<<< HEAD
       <workItem from="1533690625567" duration="16043000" />
       <workItem from="1535039052981" duration="4457000" />
 =======
       <workItem from="1530225550332" duration="41302000" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+      <workItem from="1533690625567" duration="14771000" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1512495000629</created>
@@ -951,6 +1019,7 @@
       <option name="project" value="LOCAL" />
       <updated>1530274680702</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00033" summary="1.用户交易管理">
       <created>1533706943709</created>
       <option name="number" value="00033" />
@@ -1005,6 +1074,13 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="302789000" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="387906000" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1032,16 +1108,24 @@
 =======
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914712" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49626866" weight="0.32897604" />
+<<<<<<< HEAD
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914712" weight="0.32897604" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
       <window_info id="npm" order="5" sideWeight="0.50078005" side_tool="true" weight="0.12526652" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49307036" weight="0.3017429" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49307036" visible="true" weight="0.3017429" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.13486141" />
 =======
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.12526652" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.1337953" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1113,6 +1197,7 @@
     <MESSAGE value="admin backend management" />
 <<<<<<< HEAD
     <MESSAGE value="1.用户添加身份证信息&#10;2.管理员可以初始化用户密码&#10;3.用户可以自行填写身份证信息&#10;4.用户可以自行更改登陆密码&#10;5.审核状态反映到用户界面&#10;6.管理员可以直接授权用户等级" />
+<<<<<<< HEAD
     <MESSAGE value="1.用户交易管理" />
     <MESSAGE value="1.bug fix" />
     <MESSAGE value="1.bug fix2" />
@@ -1122,6 +1207,9 @@
 =======
     <option name="LAST_COMMIT_MESSAGE" value="admin backend management" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="1.用户添加身份证信息&#10;2.管理员可以初始化用户密码&#10;3.用户可以自行填写身份证信息&#10;4.用户可以自行更改登陆密码&#10;5.审核状态反映到用户界面&#10;6.管理员可以直接授权用户等级" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1295,248 +1383,297 @@
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>367</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="348" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>368</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="351" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>371</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="352" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>373</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>375</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="354" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>377</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="355" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>376</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>381</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="357" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>379</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>380</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>382</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="360" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>384</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>387</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="362" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>390</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="363" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>389</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>388</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>386</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="366" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>385</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>391</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="368" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>393</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="369" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>395</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="370" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>396</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="371" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>394</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="372" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>397</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>350</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="375" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>351</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="376" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>352</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>353</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="378" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>354</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>355</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="380" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>359</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>360</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="382" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>361</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="383" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>362</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>366</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>363</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="387" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>365</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="388" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>364</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="389" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>358</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>357</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="391" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>356</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>392</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="393" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>349</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>369</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="395" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>370</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="396" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>372</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="397" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>374</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="398" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>378</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="399" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/routes/index.js</url>
           <line>383</line>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="400" />
 =======
           <line>211</line>
@@ -2022,6 +2159,7 @@
     <entry file="file://$PROJECT_DIR$/module/user.js">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="527">
           <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
 =======
@@ -2031,10 +2169,30 @@
           <folding>
             <element signature="e#348#359#0" />
             <element signature="e#470#545#0" />
+=======
+        <state relative-caret-position="427">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <element signature="e#348#359#0" />
+            <element signature="e#470#545#0" />
+            <element signature="e#708#1082#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#2056#2096#0" />
+            <element signature="e#2188#2190#0" />
+>>>>>>> parent of 66cafc9... 1.用户交易管理
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/views/admin/show.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -2050,24 +2208,48 @@
             <element signature="e#2794#8902#0#HTML" />
           </folding>
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="397" column="41" selection-start-line="397" selection-start-column="41" selection-end-line="397" selection-end-column="41" />
+          <folding>
+            <element signature="e#10554#10790#0" />
+            <element signature="e#10896#12221#0" />
+            <element signature="e#13875#13934#0" />
+            <element signature="e#16733#16806#0" />
+            <element signature="e#17588#17640#0" />
+            <element signature="e#14004#14244#0" />
+            <element signature="e#14361#15763#0" />
+          </folding>
+>>>>>>> parent of 66cafc9... 1.用户交易管理
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/show.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+=======
+        <state relative-caret-position="92">
+          <caret line="110" column="41" lean-forward="true" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" />
+          </folding>
+>>>>>>> parent of 66cafc9... 1.用户交易管理
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/transaction.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="119">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/transactions.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -2104,6 +2286,15 @@
         <state relative-caret-position="187">
           <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
 >>>>>>> parent of 6d4d65e... Merge pull request #12 from yinjuechen/maste
+=======
+    <entry file="file://$PROJECT_DIR$/views/users/transactions.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="e#1036#1054#0#HTML" expanded="true" />
+          </folding>
+>>>>>>> parent of 66cafc9... 1.用户交易管理
         </state>
       </provider>
     </entry>
