@@ -23,14 +23,7 @@ var userSchema = new mongoose.Schema({
         required: false
     },
     nextLevel:[this],
-    income: {
-      type:Number,
-      default: 0
-    },
-    waitingIncome:{
-      type: Number,
-      default: 0
-    },
+    income: Number,
     incomeDetails:[
         {
             createdAt:{
@@ -51,10 +44,6 @@ var userSchema = new mongoose.Schema({
     withdrawal:{
       type: Number,
       default: 0
-    },
-    waitingWithdrawal:{
-        type: Number,
-        default: 0
     },
     withdrawalDetails:[
         {
@@ -88,11 +77,7 @@ var userSchema = new mongoose.Schema({
     status:{
         type:Boolean,
         default:false
-    },
-    transaction:[{
-        type: mongoose.Schema.Types.ObjectId,
-        ref:"Transaction"
-    }]
+    }
 });
 userSchema.plugin(passportLocalMongoose);
 var User = mongoose.model('User', userSchema);

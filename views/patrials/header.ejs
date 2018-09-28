@@ -44,7 +44,7 @@
                     <% if(!currentUser){%>
                     <a class="nav-link" href="/login">个人收入明细</a>
                     <%}else{%>
-                    <a id="transaction" class="nav-link" href="/users/<%= currentUser._id%>/transactions">个人收入明细</a>
+                    <a class="nav-link" href="/users/<%= currentUser._id%>">个人收入明细</a>
                     <%}%>
                 </li>
             </ul>
